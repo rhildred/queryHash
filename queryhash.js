@@ -4,7 +4,7 @@ const getQueryHash = ()=>{
     for(let n = 0; n < aQueries.length; n++){
       let aNvp = aQueries[n].split('=');
       try{
-        oQueries[aNvp[0].toString()] = decodeURIComponent(aNvp[1].toString());
+        oQueries[aNvp[0].toString()] = decodeURIComponent(aNvp[1].toString().replace(/\+/g, " "));
       }catch(e){
           console.log(e.toString())
       }
