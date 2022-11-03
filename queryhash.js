@@ -4,7 +4,7 @@ const getQueryHash = ()=>{
     for(let n = 0; n < aQueries.length; n++){
       let aNvp = aQueries[n].split('=');
       try{
-        oQueries[aNvp[0].toString()] = aNvp[1].toString();
+        oQueries[aNvp[0].toString()] = decodeURI(aNvp[1].toString());
       }catch(e){
           console.log(e.toString())
       }
