@@ -15,3 +15,9 @@ Then in another script tag you can do something like this:
  $("#Name").append(oQueryParams.Name);
 
  ``
+ 
+ You will of course need some .html code:
+ 
+ ```
+ <p>Thanks for your inquiry <span id="Name"></span>!</p>
+ ```
