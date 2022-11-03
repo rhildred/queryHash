@@ -1,12 +1,17 @@
 # queryHash
 
-use a script source of: `https://rhildred.github.io/queryHash/queryhash.js` 
+use a script source of: 
+
+```
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://rhildred.github.io/queryHash/queryhash.js"></script>
+```
 
 Then in another script tag you can do something like this:
 
 ```
  oQueryParams = getQueryHash()
 
- $("#subject).append(oQueryParams.subject);
+ $("#Name").append(oQueryParams.Name);
 
  ``
